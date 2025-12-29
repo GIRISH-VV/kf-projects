@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KnackForge</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#home">K<span class="logo">F</span></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#management">SERVICES</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="pt-5">
+<div id="serviceCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"
+           class="d-block w-100" alt="Application Development">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"
+           class="d-block w-100" alt="Coding">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"
+           class="d-block w-100" alt="IT Services">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#serviceCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#serviceCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+
+<div class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-3 col-sm-6">
+      <div class="card service-card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=70" loading="eager"decoding="async" class="card-img-top">
+        <div class="card-body text-center">
+          <h6>Web Development</h6>
+          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb">View More</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>App Development</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalApp">View More</button></div></div></div>
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>UI / UX</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUI">View More</button></div></div></div>
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>SEO</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSEO">View More</button></div></div></div>
+
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>Cloud</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCloud">View More</button></div></div></div>
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>Testing</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalTest">View More</button></div></div></div>
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>Security</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSec">View More</button></div></div></div>
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=70" class="card-img-top"><div class="card-body text-center"><h6>DevOps</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDev">View More</button></div></div></div>
+
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>AI</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAI">View More</button></div></div></div>
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>Support</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSupport">View More</button></div></div></div>
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>Consulting</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConsult">View More</button></div></div></div>
+    <div class="col-md-3 col-sm-6"><div class="card service-card"><img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=600&q=70" class="card-img-top" loading="eager" decoding="async"><div class="card-body text-center"><h6>Maintenance</h6><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalMain">View More</button></div></div></div>
+
+  </div>
+</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="container2">
+  <h1 class="cnt">CONTACT</h1>
+  <div class="top2">
+    <div class="msg">
+      <input class="text" placeholder="Enter your name">
+      <input class="text" placeholder="Enter your email">
+      <select class="text">
+        <option>Select Service</option>
+        <option>Web Development</option>
+        <option>App Development</option>
+        <option>UI / UX</option>
+      </select>
+      <textarea class="text1" placeholder="Enter your message"></textarea>
+      <button class="sbmt">Submit</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MANAGE SERVICES ================= -->
+
+<section id="management" class="service-manage py-5">
+  <div class="container">
+
+    <h2 class="text-center mb-5 service-title">Manage Services</h2>
+    <div class="service-form mx-auto mb-5">
+      <input type="text" id="sname" class="form-control mb-3" placeholder="Service Name">
+      <input type="text" id="scat" class="form-control mb-3" placeholder="Category">
+      <textarea id="sdesc" class="form-control mb-4" rows="3" placeholder="Service Description"></textarea>
+
+      <button type="button" class="btn btn-add w-100" onclick="addService()">Add Service</button>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-hover text-center align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>Service Name</th>
+            <th>Category</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody id="serviceTable"></tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  let services = JSON.parse(localStorage.getItem("services")) || [];
+
+  function addService() {
+    const name = document.getElementById("sname").value.trim();
+    const category = document.getElementById("scat").value.trim();
+    const description = document.getElementById("sdesc").value.trim();
+
+    if (!name || !category || !description) {
+      alert("Please fill all fields");
+      return;
+    }
+
+    services.push({
+      name: name,
+      category: category,
+      description: description
+    });
+
+    localStorage.setItem("services", JSON.stringify(services));
+    displayServices();
+
+    document.getElementById("sname").value = "";
+    document.getElementById("scat").value = "";
+    document.getElementById("sdesc").value = "";
+  }
+
+  function displayServices() {
+    const tableBody = document.getElementById("serviceTable");
+    tableBody.innerHTML = "";
+
+    services.forEach(service => {
+      tableBody.innerHTML += `
+        <tr>
+          <td>${service.name}</td>
+          <td>${service.category}</td>
+          <td>${service.description}</td>
+        </tr>
+      `;
+    });
+  }
+
+  displayServices();
+</script>
+<div class="modal fade" id="modalWeb" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Web Development</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Responsive and scalable websites.</p>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Bootstrap</li>
+          <li>SEO Friendly</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. App Development -->
+<div class="modal fade" id="modalApp" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>App Development</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Android & iOS Apps</li>
+          <li>Flutter / React Native</li>
+          <li>High Performance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. UI / UX -->
+<div class="modal fade" id="modalUI" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>UI / UX Design</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>User Research</li>
+          <li>Wireframes</li>
+          <li>Interactive Design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. SEO -->
+<div class="modal fade" id="modalSEO" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>SEO Services</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Keyword Optimization</li>
+          <li>On-page SEO</li>
+          <li>Google Ranking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. Cloud -->
+<div class="modal fade" id="modalCloud" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Cloud Services</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>AWS & Azure</li>
+          <li>Scalable Hosting</li>
+          <li>High Availability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6. Testing -->
+<div class="modal fade" id="modalTest" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Software Testing</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Manual Testing</li>
+          <li>Automation Testing</li>
+          <li>Bug Tracking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7. Cyber Security -->
+<div class="modal fade" id="modalSec" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Cyber Security</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Data Protection</li>
+          <li>Network Security</li>
+          <li>Risk Analysis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 8. DevOps -->
+<div class="modal fade" id="modalDev" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>DevOps</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>CI / CD Pipeline</li>
+          <li>Docker & Kubernetes</li>
+          <li>Automation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 9. Artificial Intelligence -->
+<div class="modal fade" id="modalAI" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Artificial Intelligence</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Machine Learning</li>
+          <li>Data Analysis</li>
+          <li>Automation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 10. IT Support -->
+<div class="modal fade" id="modalSupport" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>IT Support</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>24/7 Support</li>
+          <li>Issue Resolution</li>
+          <li>Maintenance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 11. Consulting -->
+<div class="modal fade" id="modalConsult" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Consulting</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Business Analysis</li>
+          <li>Technical Guidance</li>
+          <li>Planning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 12. Maintenance -->
+<div class="modal fade" id="modalMain" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Maintenance</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Regular Updates</li>
+          <li>Performance Monitoring</li>
+          <li>Error Fixing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script></script>
+</body>
+</html>
