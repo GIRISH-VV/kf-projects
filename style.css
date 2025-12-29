@@ -98,7 +98,8 @@ body
 }
 .cnt{
     font-size: 2.5rem;
-    margin-left: 42%;
+    /* margin-left: 42%; */
+    text-align: center;
     color:  #ff004f;
     position: relative;
     top: 120px;
